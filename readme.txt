@@ -22,7 +22,7 @@ The plugin works with any provider (Google, OpenStreetMap, MapBox, BING, etc..)
 
 This plugin is designed to be as simple to use as possible. 
 
-While we have added plenty of great features and options for you, no configuration required is to get started and start making custom maps.
+While we have added plenty of great features and options for you, no configuration is required to get started making custom maps.
 
 Just click the marker icon and drop it onto the map.
 
@@ -32,9 +32,20 @@ You can add maps to your pages and posts using the "Add MapFig Map" button.
 
 An integrated Widget is also included.
 
+The MapFig Leaflet Map plugin is 100% free with optional direct ticket support for just $5 per year!
+
+The support option also provides you with free updates and upgrades.
+
+There is no difference in features or functionality between the free plugin and the support package.
+
+
 = Open Source =
+
 [MapFig](https://www.mapfig.com) is an Open Source initiative with the aim of allowing users of all skill levels to easily add custom Leaflet maps to any web site.
 
+The MapFig Leaflet Map plugin is one part of this initiative.
+
+Please consider purchasing a support package so we can continue to develop these projects.
 
 
 = Features =
@@ -63,23 +74,22 @@ The MapFig Leaflet Maps main features are:
 * Download as JSON from within WP
 * Download as BootStrap from within WP
 * Social Share - share maps on all Social Media as well as via email. Maps do not need to be published to be shared.  We have created and included icons for social media but you can replace with your own.
-* The MapFig Leaflet Plugin is free with optional direct ticket support for $5 per year. This also includes free upgrades and updates.
-* The support option is non-expiring. So your plugin will continue to function even if you decide not to opt for annual support
-* Optional upgrade to add GPX, SVG Maps, and PlayBack at no additional charge! (GPX, SVG, and Playback are offered optionally as for 99% of WordPress users 
-they would not be used and would just add complexity to your plugin).
+* Optional direct ticket support for $5 per year! This also includes free upgrades and updates.
+* We also offer a $7 per year support option that includes adding GPX, SVG Maps, and PlayBack functionality as well as direct ticket support, updates, and upgrades.
+* Both support options are non-expiring. So your plugin will continue to function even if you decide not to opt to renew your annual support
 
 
-== Support Option ==
+== Support Options ==
 
-The MapFig Leaflet Maps Plugin is free and fully functional. You can add direct ticket support, along with free updates and upgrades for just $5 per year!
+The MapFig Leaflet Maps Plugin is free and fully functional. 
+
+You can add direct ticket support, along with free updates and upgrades for just $5 per year!
+
+We also offer a $7 per year support options that includes GPX, SVG Maps, and PlayBack functionality.
 
 The support option is non-expiring. So your plugin will continue to function even if you decide not to opt for support next year.
 
-The support options also includes free option to add GPX, SVG Maps, and PlayBack at no additional charge! 
-
-(GPX, SVG, and Playback are offered optionally as for most WordPress users they would just add complexity to your plugin).
-
-You can purchase the support option via our [Secure Portal] (https://www.mapfig.com/portal/cart.php?a=add&pid=1)
+You can purchase either support option via our [Secure Portal] (https://www.mapfig.com/portal/cart.php?gid=1)
 
 
 = Plugin's Official Site =
@@ -141,24 +151,24 @@ For basic usage and tutorials, please see [MapFig Leaflet Plugin Docs](http://do
 
 == Frequently Asked Questions ==
 
-=Is this really free?=
+= Is this really free? =
 
 Yes, it is 100% free.  There is also an option to purchase direct ticket support as well as free updates and upgrades for $5 per year.
 
-=Will you help me install the plugin?=
+= Will you help me install the plugin? =
 
 The plugin installs like any other WordPress plugin, there are also detailed instructions above.  If you purchase the $5 per year support option we will
 be happy to install it for you.
 
-=What if there is a conflict with another plugin I am using?=
+= What if there is a conflict with another plugin I am using? =
 
 Email us at wp-conflicts@mapfig.com and we will work to resolve it.
 
-=Can I just get support for the first year?=
+= Can I just get support for the first year? =
 
 Yes. The support license is non-expiring, which means your plugin will continue to function fully even if you decide not to renew support.
 
-=Before contacting us, please check out our docs below=
+= Please also visit our docs below =
 
 1. [MapFig Leaflet Maps Plugin Docs](http://docs.mapfig.com/wordpress-premium-leaflet-plugin/)
 2. [MapFig Studio Docs](http://docs.mapfig.com/mapfig-studio/)
@@ -180,6 +190,16 @@ Yes. The support license is non-expiring, which means your plugin will continue 
 07. Social Share Maps and Download Maps as HTML, BootStrap, or JSON
 
 == Other Notes ==
+
+MapFig is an Open Source project.
+
+The center piece of the MapFig Open Source project is our MapFig Studio, a Leaflet map creation, editing, management and deployment server.
+
+Like the MapFig Leaflet Map Plugin, MapFig Studio is also 100% open source and 100% free.
+
+You can learn more about MapFig Studio via [our site](https://www.mapfig.com/download.html/)  or on [GitHub](https://www.github.com/MapFig) 
+
+Please consider purchasing a support package for your MapFig Leaflet Map plugin so we can continue to develop these projects.
 
 = Licence =
 This plugin is free and released under GPLv3.
