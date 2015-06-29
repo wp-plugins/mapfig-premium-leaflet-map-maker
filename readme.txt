@@ -16,10 +16,17 @@ Easily create and display custom Leaflet maps in your pages and posts.
 
 == Description ==
 
-The MapFig Leaflet Maps Plugin allows you to create, manage, and display maps all within WordPress.
+The MapFig Leaflet Maps Plugin allows you to create and display custom, stylish maps simply and easily.
 
-This plugin is designed to be as simple to use as possible. While we have added plenty of optios for you, no configuration required is 
-to get started and start making custom maps.
+The plugin works with any provider (Google, OpenStreetMap, MapBox, BING, etc..)
+
+This plugin is designed to be as simple to use as possible. 
+
+While we have added plenty of great features and options for you, no configuration required is to get started and start making custom maps.
+
+Just click the marker icon and drop it onto the map.
+
+In addition to markers, you can also draw lines, polygons and squares. 
 
 You can add maps to your pages and posts using the "Add MapFig Map" button.
 
