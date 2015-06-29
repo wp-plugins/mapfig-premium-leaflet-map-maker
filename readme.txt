@@ -187,7 +187,7 @@ You can redistribute it or modify it under the terms of the GNU General Public L
 For licenses used under MapFig Studio, please see full list at  [MapFig.com](https://www.mapfig.com)
 
 == Thanks To: ==
-* David Ghedini ([http://www.davidghedini.com/](http://www.davidghedini.com/)) a.k.a MaFig
+* David Ghedini ([http://www.davidghedini.com/](http://www.davidghedini.com/)) a.k.a MapFig
 * Muaaz Khalid ([http://www.fastesol.com](http://www.fastesol.com)) a.k.a Fastesol
 * AcuGIS ([https://www.acugis.com/](https://www.acugis.com/)) from creating initiative
 * VooServers ([https://www.VooServers.com/](https://www.VooServers.com/)) for sponsoring initiave and free  [Public Cloud](https://studio.mapfig.com/)
