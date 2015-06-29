@@ -137,11 +137,11 @@ That's all.
 
 You will also have a "Add MapFig Map" button above your editor for pages and posts.
 
-For basic usage and tutorials, please see [MapFig Studio Plugin Docs](http://docs.mapfig.com/wordpress-studio-plugin/)
+For basic usage and tutorials, please see [MapFig Leaflet Plugin Docs](http://docs.mapfig.com/wordpress-premium-leaflet-plugin/)
 
 == Frequently Asked Questions ==
 
-=Is this really free=
+=Is this really free?=
 
 Yes, it is 100% free.  There is also an option to purchase direct ticket support as well as free updates and upgrades for $5 per year.
 
@@ -150,7 +150,7 @@ Yes, it is 100% free.  There is also an option to purchase direct ticket support
 The plugin installs like any other WordPress plugin, there are also detailed instructions above.  If you purchase the $5 per year support option we will
 be happy to install it for you.
 
-=What if there is a conflict with another plugin I am using=
+=What if there is a conflict with another plugin I am using?=
 
 Email us at wp-conflicts@mapfig.com and we will work to resolve it.
 
