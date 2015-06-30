@@ -20,24 +20,17 @@ The MapFig Leaflet Maps Plugin allows you to create and display custom, stylish 
 
 The plugin works with any map provider (Google, OpenStreetMap, MapBox, BING, MapQuest, etc..) 
 
-While we have added plenty of great features and options for you, the plugin is designed for ease of use and no configuration is required to get started making custom maps. Just click the marker icon and drop it onto the map.  In addition to markers, you can also draw lines, polygons and squares. You can then add maps to your pages and posts in one click using the "Add MapFig Map" button see [screenshot 4] (https://wordpress.org/plugins/mapfig-premium-leaflet-map-maker/screenshots/).
+The MapFig Leaflet Map plugin is designed for ease of use.  Just click the marker icon and drop it onto the map.  Enter the location or address and address auto-complete will place the marker where you want it.  In addition to markers, you can also draw lines, polygons and squares. 
 
-A WYSISYG editor allows you to add formatted text, images, and links to marker pop-ups easily.  Marker pop-ups can be standard of fancy modal see [screenshots] (https://wordpress.org/plugins/mapfig-premium-leaflet-map-maker/screenshots/).
+A WYSIWYG editor allows you to add formatted text, images, and links to marker pop-ups.  Marker pop-ups can be standard or fancy modal see [screenshots] (https://wordpress.org/plugins/mapfig-premium-leaflet-map-maker/screenshots/).
+
+Add maps to your pages and posts in one click using the "Add MapFig Map" button see [screenshot 4] (https://wordpress.org/plugins/mapfig-premium-leaflet-map-maker/screenshots/).
 
 An integrated Widget is also included as well as Social Share, export, and all of the features below.
 
 The MapFig Leaflet Map plugin is 100% free with optional direct ticket support for just $5 per year! The support option also provides you with free updates and upgrades.  
 
-** There is no difference in features or functionality between the free plugin and the support package.**
-
-
-= Open Source =
-
-[MapFig](https://www.mapfig.com) is an Open Source initiative with the aim of allowing users of all skill levels to easily add custom Leaflet maps to any web site.
-
-The MapFig Leaflet Map plugin is one part of this initiative.
-
-Please consider purchasing a support package so we can continue to develop these projects.
+**There is no difference in features or functionality between the free plugin and the support package.**
 
 
 = Features =
@@ -45,10 +38,13 @@ Please consider purchasing a support package so we can continue to develop these
 The MapFig Leaflet Maps main features are:
 
 * Markers, Lines, and Polygons
-* On-Map creation and editing
-* Add as many markers and shapes to maps as you wish to.
-* Add Maps to Posts and Pages via button
 * Works with any map provider (OpenStreetMap, Google, MapBox, BING, etc..)
+* On-Map creation and editing (See exactly how your map will look as you create it, no need to refresh or reload page)
+* Integrated Address/Location auto-complete to place your markers
+* Add as many markers and shapes to maps as you wish to
+* Unimited maps
+* Select options (base map, zoom, etc..) for each map you create, so each map is just how you want it.
+* Add Maps to Posts and Pages via button
 * 100+ Font Awesome Marker icons
 * Create Custom Map Provider Groupings
 * Standard or Modal InfoBox see [screenshots] (https://wordpress.org/plugins/mapfig-premium-leaflet-map-maker/screenshots/)
@@ -70,6 +66,15 @@ The MapFig Leaflet Maps main features are:
 * Optional direct ticket support for $5 per year! This also includes free upgrades and updates.
 * We also offer a $7 per year support option that includes adding GPX, SVG Maps, and PlayBack functionality as well as direct ticket support, updates, and upgrades.
 * Both support options are non-expiring. So your plugin will continue to function even if you decide not to opt to renew your annual support
+
+
+= Open Source =
+
+[MapFig](https://www.mapfig.com) is an Open Source initiative with the aim of allowing users of all skill levels to easily add custom Leaflet maps to any web site.
+
+The MapFig Leaflet Map plugin is one part of this initiative.
+
+Please consider purchasing a support package so we can continue to develop these projects.
 
 
 == Support Options ==
