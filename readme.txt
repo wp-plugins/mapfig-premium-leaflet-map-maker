@@ -212,7 +212,7 @@ For licenses used under MapFig Studio, please see full list at  [MapFig.com](htt
 
 == Changelog ==
 
-Fixed issue with sidebar using standard pop-up when modal selected.
+1.0.1 Fixed issue with sidebar link opening standard pop-up when modal pop-up selected.
 
 == Thanks To: ==
 * David Ghedini ([http://www.davidghedini.com/](http://www.davidghedini.com/)) a.k.a MapFig
