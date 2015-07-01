@@ -7,11 +7,11 @@ Author:            MapFig
 Contributors:      MapFig, Fastesol
 Requires at least: 3.0.1
 Tested up to:      4.2.2
-Stable tag:        2.2.5
+Stable tag:        1.0.1
 License:           GPLv3
 
 
-Easily create and display custom maps in your pages and posts.  
+Easily create and display custom maps in your pages and posts. Free!  
 
 
 == Description ==
@@ -209,6 +209,10 @@ Please consider purchasing a support package for your MapFig Leaflet Map plugin 
 This plugin is free and released under GPLv3.
 You can redistribute it or modify it under the terms of the GNU General Public License V3.
 For licenses used under MapFig Studio, please see full list at  [MapFig.com](https://www.mapfig.com)
+
+== Changelog ==
+
+Fixed issue with sidebar using standard pop-up when modal selected.
 
 == Thanks To: ==
 * David Ghedini ([http://www.davidghedini.com/](http://www.davidghedini.com/)) a.k.a MapFig

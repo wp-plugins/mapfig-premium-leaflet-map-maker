@@ -5,7 +5,7 @@
  * Author: MapFig Ltd
  * Author URI: http://www.mapfig.com/
  * Plugin URI: http://www.mapfig.com/wordpress-plugins.html
- * Version: 0.1
+ * Version: 1.0.1
  * License: GPL
  */
  
