@@ -557,8 +557,9 @@
 		var layers = getLayers();
 		index = jQuery(obj).attr("data-index");
 		setTimeout(function() {
-			openPopup(layers[index]);
+			//openPopup(layers[index]);
 			//layers[index].openPopup();
+			layers[index].fire("click");
 		}, 50);
 	}
 	</script>
