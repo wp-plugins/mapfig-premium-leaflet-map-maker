@@ -17,16 +17,24 @@ function mapfig_premium_mf_menu() {
 
 	add_submenu_page( MF_PLUGIN_NAME, 'Documentation', '<i class="fa fa-book"></i> Documentation', 'administrator', 'get-started', 'get_started' );
 	add_submenu_page( MF_PLUGIN_NAME, 'License Key', '<i class="fa fa-key"></i> License Key<hr>', 'administrator', 'mapfig-license', 'license_view' );
-	
-	add_dashboard_page( "delete", "delete", "administrator", "map-delete", "map_delete");
-	add_dashboard_page( "delete", "delete", "administrator", "map-marker-delete", "map_marker_delete");
 }
 
 function license_view () {
 	$msg = "";
 	$err = "";
 	
-	include MAPFIG_PREMIUM_EMP_DOCROOT . '/views/license_view.php';
+	if(isset($_POST['submit'])) {
+		$results = mapfig_premium_check_license($_POST['mapfig_premium_licensekey']);
+		if($results['status'] == "Active") {
+			$msg = "Plugin is Successfully Activated";
+			update_option("mapfig_premium_licensekey", $_POST['mapfig_premium_licensekey']);
+		}
+		else {
+			$err = 'MapFig Leaflet Plugin License is '.$results['status'];
+		}
+	}
+	
+	include MAPFIG_PREMIUM_EMP_DOCROOT . '/views/license_view_form.php';
 }
 
 function get_started(){
@@ -65,34 +73,6 @@ function social_share_settings(){
 	}
 	include MAPFIG_PREMIUM_EMP_DOCROOT . '/views/social_share_settings.php';
 }
-
-function map_delete(){
-	if($_REQUEST['mapid']){
-		$delete = mapfig_premium_model_mf_Table::map_delete($_REQUEST['mapid']);
-		if($delete){
-			$msg = "Map successfully deleted.";
-		}
-	}
-	mf_main_map($msg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function layers($err='', $msg='') {
@@ -241,31 +221,27 @@ function groups_has_layers($msg='') {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function mf_main_map($msg=''){
+	if(isset($_REQUEST['mapid']) && isset($_REQUEST['action']) && $_REQUEST['action'] == "delete") {
+		$delete = mapfig_premium_model_mf_Table::map_delete((int)$_REQUEST['mapid']);
+		if($delete){
+			$msg = "Map successfully deleted.";
+		}
+	}
+	
 	$result = mapfig_premium_model_mf_Table::getmf_map();
 	include MAPFIG_PREMIUM_EMP_DOCROOT . '/views/main_map.php';
 }
 
 
 function add_main_map() {
+	if(!mapfig_premium_canAddMaps() && 
+		(((int)$_GET['id'] == 0) || 
+		((int)$_POST['id'] == 0 && isset($_POST['submit'])))
+	) {
+		include MAPFIG_PREMIUM_EMP_DOCROOT . '/views/map_cant_add.php';
+		return;
+	}
 	$post = $_POST;
 	
 	$err ='';

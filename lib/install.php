@@ -84,47 +84,95 @@ function mapfig_premium_tb_mf_install() {
 
 
 	/* Default layer/group Start */
+	if($groups_id && $layers_id && $group_has_layer_id) {
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png', '', 'Loniva Biking', '<a href=\"http://cycling.waymarkedtrails.org/\" target=\"_blank\">OpenStreetMap</a>', 0)");
+		$layers_id_1  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', '', 'Loniva Hiking', '<a href=\"https://openpistemap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
+		$layers_id_2  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', '', 'OpenCycleMap', '<a href=\"http://thunderforest.com/\" target=\"_blank\">Thunderforest</a>', 0)");
+		$layers_id_3  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', '', 'Stamen.Toner', 'Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, under <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">ODbL</a>.', 0)");
+		$layers_id_4  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', '', 'Stamen.Watercolor', 'Map tiles by <a href=\"http://stamen.com\" target=\"_blank\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\" target=\"_blank\">CC BY SA</a>.', 0)");
+		$layers_id_5  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', 'examples.map-i875mjb7', 'MapBox', '<a href=\"http://mapbox.com\" target=\"_blank\">Mapbox</a>', 0)");
+		$layers_id_6  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', '', 'CartoDB Light', 'Map tiles by <a href=\"http://cartodb.com/attributions#basemaps\" target=\"_blank\">CartoDB</a>, under <a href=\"https://creativecommons.org/licenses/by/3.0/\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://www.openstreetmap.org/\" target=\"_blank\">OpenStreetMap</a>, under ODbL.', 0)");
+		$layers_id_7  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', '', 'CartoDB Dark', 'Map tiles by <a href=\"http://cartodb.com/attributions#basemaps\" target=\"_blank\">CartoDB</a>, under <a href=\"https://creativecommons.org/licenses/by/3.0/\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://www.openstreetmap.org/\" target=\"_blank\">OpenStreetMap</a>, under ODbL.', 0)");
+		$layers_id_8  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', '', 'Esri World Imagery', 'Attribution: <a href=\"http://www.esri.com/\" target=\"_blank\">ESRI</a>', 0)");
+		$layers_id_9  = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://otile3-s.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', '', 'MapQuest', '<a href=\"https://openstreetmap.org\" target=\"_blank\">OpenStreetMap. </a> Tiles Courtesy of <a href=\"http://www.mapquest.com/\" target=\"_blank\">MapQuest</a>', 0)");
+		$layers_id_10 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', '', 'OpenStreetMap', '<a href=\"https://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
+		$layers_id_11 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', '', 'Google Maps', '<a href=\"http://www.google.com/intl/en-GB_US/help/terms_maps.html\" target=\"_blank\">Google - Terms of Use</a>', 0)");
+		$layers_id_12 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://otile1.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.png', '', 'MapQuest Sat', '<a href=\"https://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
+		$layers_id_13 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tile.thunderforest.com/mapfig-bluewaters/{z}/{x}/{y}.png', '', 'MapFig Bluewaters', '&copy; <a href=\"http://mapfig.org\" target=\"_blank\">MapFig </a> Bluewaters by <a href=\"http://thunderforest.com\" target=\"_blank\">Thunderforest,</a> Data by <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>.', 0)");
+		$layers_id_14 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tile.thunderforest.com/mapfig-2a6/{z}/{x}/{y}.png', '', 'MapFig Greenwaters', '&copy; <a href=\"http://mapfig.org\" target=\"_blank\">MapFig </a> Greenwaters by <a href=\"http://thunderforest.com\" target=\"_blank\">Thunderforest,</a> Data by <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>.', 0)");
+		$layers_id_15 = $wpdb->insert_id;
+		$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tile.thunderforest.com/mapfig-darkwaters/{z}/{x}/{y}.png', '', 'MapFig Darkwaters', '&copy; <a href=\"http://mapfig.org\" target=\"_blank\">MapFig </a> Darkwaters by <a href=\"http://thunderforest.com\" target=\"_blank\">Thunderforest,</a> Data by <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>.', 0)");
+		$layers_id_16 = $wpdb->insert_id;
 
-	$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('My First Group', 0)");
-	$groups_id = $wpdb->insert_id;
-
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png', '', 'Loniva Biking', '<a href=\"http://cycling.waymarkedtrails.org/\" target=\"_blank\">OpenStreetMap</a>', 0)");
-	$layers_id_1  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', '', 'Loniva Hiking', '<a href=\"https://openpistemap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
-	$layers_id_2  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', '', 'OpenCycleMap', '<a href=\"http://thunderforest.com/\" target=\"_blank\">Thunderforest</a>', 0)");
-	$layers_id_3  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', '', 'Stamen.Toner', 'Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, under <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">ODbL</a>.', 0)");
-	$layers_id_4  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', '', 'Stamen.Watercolor', 'Map tiles by <a href=\"http://stamen.com\" target=\"_blank\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\" target=\"_blank\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\" target=\"_blank\">CC BY SA</a>.', 0)");
-	$layers_id_5  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', 'examples.map-i875mjb7', 'MapBox', '<a href=\"http://mapbox.com\" target=\"_blank\">Mapbox</a>', 0)");
-	$layers_id_6  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', '', 'CartoDB Light', '<a href=\"https://CartoDB.com\" target=\"_blank\">Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.</a>', 0)");
-	$layers_id_7  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', '', 'CartoDB Dark', '<a href=\"https://CartoDB.com\" target=\"_blank\">Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.</a>', 0)");
-	$layers_id_8  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', '', 'Esri World Imagery', '<a href=\"http://www.esri.com/\" target=\"_blank\">Esri</a>', 0)");
-	$layers_id_9  = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://otile3-s.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', '', 'MapQuest', '<a href=\"https://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
-	$layers_id_10 = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', '', 'OpenStreetMap', '<a href=\"https://openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>', 0)");
-	$layers_id_11 = $wpdb->insert_id;
-	$wpdb->query("INSERT INTO ".MF_LAYERS_TABLE." (`url`, `lkey`, `name`, `attribution`, `hidden`) VALUES ('http://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', '', 'Google Map', '<a href=\"http://www.google.com/intl/en-GB_US/help/terms_maps.html\" target=\"_blank\">Google - Terms of Use</a>', 0)");
-	$layers_id_12 = $wpdb->insert_id;
-
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_1)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_2)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_3)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_4)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_5)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_6)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_7)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_8)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_9)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_10)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_11)");
-	$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_12)");
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('My First Group', 0)");
+		$groups_id = $wpdb->insert_id;
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_1)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_2)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_3)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_4)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_5)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_6)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_7)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_8)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_9)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_10)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_11)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_12)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_13)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_14)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_15)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_16)");
+		
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('SSL Maps', 0)");
+		$groups_id = $wpdb->insert_id;
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_10)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_11)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_14)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_16)");
+		
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('Style Maps', 0)");
+		$groups_id = $wpdb->insert_id;
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_4)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_5)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_7)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_8)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_13)");
+		
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('Outdoor Maps', 0)");
+		$groups_id = $wpdb->insert_id;
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_1)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_2)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_3)");
+		
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_TABLE." (`name`, `hidden`) VALUES ('Satellite Maps', 0)");
+		$groups_id = $wpdb->insert_id;
+		
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_9)");
+		$wpdb->query("INSERT INTO ".MF_GROUPS_HAS_LAYERS_TABLE." (`groups_id`, `layers_id`) VALUES ($groups_id, $layers_id_12)");
+	}
 	/* Default layer/group End */
 }
 function mapfig_premium_tb_mf_uninstall() {

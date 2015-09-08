@@ -121,7 +121,7 @@
 
 					<a title="Edit" href="<?php echo admin_url().'admin.php?page=add-new-map&id='.$data->mid; ?>" class="btn btn-success btn-sm"> <i class="fa fa-pencil"></i> Edit</a>
 
-					<a title="Delete" href="<?php echo admin_url().'admin.php?page=map-delete&mapid='.$data->mid; ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a>
+					<a title="Delete" href="<?php echo admin_url().'admin.php?page=my-maps&action=delete&mapid='.$data->mid; ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a>
 					
 					<a title="Download HTML Map" href="<?=admin_url('admin-ajax.php?action=download_map&id='.$data->mid)?>" class="btn btn-warning btn-sm" target="_blank"><i class="fa fa-download"></i> HTML</a>
 					

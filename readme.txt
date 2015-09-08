@@ -6,19 +6,19 @@ Author URI:        https://www.mapfig.com
 Author:            MapFig
 Contributors:      MapFig, Fastesol
 Requires at least: 3.0.1
-Tested up to:      4.2.2
-Stable tag:        1.0.1
+Tested up to:      4.3.0
+Stable tag:        2.0.1
 License:           GPLv3
 
 
-Easily create and display custom maps in your pages and posts. Free!  
+Easily create and display custom maps in your pages and posts. 
 
 
 == Description ==
 
 The MapFig Leaflet Maps Plugin allows you to create and display custom, stylish maps simply and easily.
 
-The plugin works with any map provider (Google, OpenStreetMap, MapBox, BING, MapQuest, etc..) 
+The plugin works with any map provider (Google, OpenStreetMap, MapBox, BING, MapQuest, etc..) as well as our own maps.
 
 The MapFig Leaflet Map plugin is designed for ease of use.  Just click the marker icon and drop it onto the map.  Enter the location or address and address auto-complete will place the marker where you want it.  In addition to markers, you can also draw lines, polygons and squares. 
 
@@ -28,9 +28,9 @@ Add maps to your pages and posts in one click using the "Add MapFig Map" button 
 
 An integrated Widget is also included as well as Social Share, export, and all of the features below.
 
-The MapFig Leaflet Map plugin is 100% free with optional direct ticket support for just $5 per year! The support option also provides you with free updates and upgrades.  
+The MapFig Leaflet Map plugin is 100% free with a limit of 5 maps.  For unlimited maps, it is only $5! The $5 also provides you with direct support and free updates and upgrades.  
 
-**There is no difference in features or functionality between the free plugin and the support package.**
+
 
 
 = Features =
@@ -74,23 +74,20 @@ The MapFig Leaflet Maps main features are:
 
 The MapFig Leaflet Map plugin is one part of this initiative.
 
-Please consider purchasing a support package so we can continue to develop these projects.
+Please consider purchasing the Pro version so we can continue to develop these projects.
 
 
 == Support Options ==
 
-The MapFig Leaflet Maps Plugin is free and fully functional. 
+The MapFig Leaflet Maps Plugin is free and fully functional but with a limit of 5 maps. 
 
-You can add direct ticket support, along with free updates and upgrades for just $5 per year!
+You can create unlimited maps, as well as ticket support and free updates and upgrades for just $5!
 
-We also offer a $7 per year support options that includes GPX, SVG Maps, and PlayBack functionality.
+We also offer a $7 option that includes GPX, SVG Maps, and PlayBack functionality.
 
 The support option is non-expiring. So your plugin will continue to function even if you decide not to opt for support next year.
 
-You can purchase either support option via our [Secure Portal] (https://www.mapfig.com/portal/cart.php?gid=1)
-
-Please consider purchasing a support package so we can continue to develop these projects.
-
+You can purchase either option via our [Secure Portal] (https://www.mapfig.com/portal/cart.php?gid=1)
 
 = Plugin's Official Site =
 https://www.mapfig.com
@@ -151,22 +148,17 @@ For basic usage and tutorials, please see [MapFig Leaflet Plugin Docs](http://do
 
 == Frequently Asked Questions ==
 
-= Is this really free? =
-
-Yes, it is 100% free.  There is also an option to purchase direct ticket support as well as free updates and upgrades for $5 per year.
-
 = Is any configuration required? =
 
-No, just activate the plugin and you are ready to go. The plugin comes pre-loaded with 10 map providers, but you can easily add and remove map providers via the plugin menu.  The Social Share feature includes custom, pre-made icons for Facebook, Twitter, Pintrest, and LinkedIn, but you can replace these with your own images via the menu.
+No, just activate the plugin and you are ready to go. The plugin comes pre-loaded with 12 map providers, but you can easily add and remove map providers via the plugin menu.  The Social Share feature includes custom, pre-made icons for Facebook, Twitter, Pintrest, and LinkedIn, but you can replace these with your own images via the menu.
 
 = Will you help me install the plugin? =
 
-The plugin installs like any other WordPress plugin, there are also detailed instructions above.  If you purchase the $5 per year support option we will
-be happy to install it for you.
+Yes, just create a support ticket.
 
 = What if there is a conflict with another plugin I am using? =
 
-Email us at wp-conflicts@mapfig.com and we will work to resolve it.
+Let us know and we will work to resolve it.
 
 = Can I just get support for the first year? =
 
@@ -179,8 +171,8 @@ Yes. The support license is non-expiring, which means your plugin will continue 
 3. [MapFig Docs](http://docs.mapfig.com/)
 5. [Wordpress Support Forum](http://wordpress.org/support/plugin/mapfig-premium-leaflet-map-maker)
 6. [FAQ](https://www.mapfig.com/faq/)
-7. [Ghost](https://mapfig.ghost.io/)
-8. [Free Support Forum](http://forum.mapfig.com/) (Free Community Support Forum - this is just underway.)
+7. [Blog](http://blog.mapfig.com)
+
 
 
 == Screenshots ==
@@ -199,20 +191,16 @@ MapFig is an Open Source project.
 
 The center piece of the MapFig Open Source project is our MapFig Studio, a Leaflet map creation, editing, management and deployment server.
 
-Like the MapFig Leaflet Map Plugin, MapFig Studio is also 100% open source and 100% free.
+You can learn more about MapFig Studio via [our site](https://www.mapfig.org/)  or on [GitHub](https://www.github.com/MapFig) 
 
-You can learn more about MapFig Studio via [our site](https://www.mapfig.com/download.html/)  or on [GitHub](https://www.github.com/MapFig) 
-
-Please consider purchasing a support package for your MapFig Leaflet Map plugin so we can continue to develop these projects.
 
 = Licence =
-This plugin is free and released under GPLv3.
-You can redistribute it or modify it under the terms of the GNU General Public License V3.
+This plugin is released under GPLv3.
 For licenses used under MapFig Studio, please see full list at  [MapFig.com](https://www.mapfig.com)
 
 == Changelog ==
 
-1.0.1 Fixed issue with sidebar link opening standard pop-up when modal pop-up selected.
+2.0.1 Update marker set to include white 3D border
 
 == Thanks To: ==
 * David Ghedini ([http://www.davidghedini.com/](http://www.davidghedini.com/)) a.k.a MapFig
@@ -223,5 +211,5 @@ For licenses used under MapFig Studio, please see full list at  [MapFig.com](htt
 * Robert Williger
 
 = Trademark and copyright =
-MapFig Ltd &reg;
-Copyright 2015, MapFig Ltd, Enciva LLC, All Rights Reserved
+MapFig Inc &reg;
+Copyright 2015, MapFig Inc, MapFig, Ltd, All Rights Reserved
